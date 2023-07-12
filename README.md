@@ -107,10 +107,10 @@ void display(int temp, String set)
 ### 🧠Explicacion
 
 ``` C++
-#include <LiquidCrystal.h>
-#include <Keypad.h>
+#include <LiquidCrystal.h>  // Incluyo la libreria para el display LCD
+#include <Keypad.h>  // Incluyo la libreria para el Keypad
 
-#define sensor A1
+#define sensor A1  // defino A1 como sensor
 
 const byte FILAS = 4;
 const byte COLUMNAS = 4;
@@ -125,10 +125,10 @@ byte pinesFilas[FILAS] = {11, 10, 9, 8};
 byte pinesColumnas[COLUMNAS] = {7, 6, 5, 4};
 Keypad teclado = Keypad(makeKeymap(keys), pinesFilas, pinesColumnas, FILAS, COLUMNAS);
 
-LiquidCrystal lcd(3, A0, A2, A3, A4, A5);
+LiquidCrystal lcd(3, A0, A2, A3, A4, A5);  // conecto display LCD.
 
-int medicion;
-String ingreso = "";
+int medicion;  // defino medicion para leer el sensor de temperatura.
+String ingreso = "";  // defino ingreso para guardar el valor ingresado por keypad.
 
 void setup()
 {
@@ -136,59 +136,57 @@ void setup()
   
   lcd.begin(16, 2);
   
-  pinMode(sensor, INPUT);
+  pinMode(sensor, INPUT);  // defino el sensor como entrada.
 }
 
 void loop()
 {
-  medicion = analogRead(sensor);
-  medicion = map(medicion, 20, 358, -40, 125);
+  medicion = analogRead(sensor);  // Lectura del sensor
+  medicion = map(medicion, 20, 358, -40, 125);  // Mapeo de la lectura del sensor a un rango de temperaturas.
   
-  char TECLA = teclado.getKey();
+  char TECLA = teclado.getKey();  // Lectura de la tecla presionada en el keypad.
 
   if (TECLA)
   {
-    
     if (isdigit(TECLA) && ingreso.length() < 2) {
-      ingreso += TECLA;
+      ingreso += TECLA;  // Si presiona un digito y la longitud del valor ingresado es menor a 2, se agregan los digitos a la variable ingreso.
     }
-    
     else if (TECLA == 'A')
     {
       if (ingreso.length() > 0)
       {
-        int setTemp = ingreso.toInt();
-        Serial.println(medicion - setTemp);
+        int setTemp = ingreso.toInt();  // Se convierte el valor ingresado a un entero.
+        Serial.println(medicion - setTemp);  // Muestro el resultado de la resta entre medicion y setTemp en el puerto serie.
       }
     }
-    
     else if (TECLA == 'B')
     {
       ingreso = "";
       lcd.setCursor(0, 1);
-      lcd.clear();
+      lcd.clear();  // Borra el contenido del display LCD.
     }
-    
   }
   
-  display(medicion, ingreso);
+  display(medicion, ingreso);  // Llamo a la funcion display para mostrar la temperatura y el valor ingresado en el display LCD.
   delay(25);
 }
+
+}
 ```
-hola
+---
 
 ``` C++
 // FUNCIONES
 void display(int temp, String set)
 {
   lcd.setCursor(0, 0);
-  lcd.print("TEMP:");
+  lcd.print("TEMP:");  // Muestro "TEMP:" en la primera fila del display.
   lcd.setCursor(5, 0);
-  lcd.print(temp);
+  lcd.print(temp);  // Muestro temperatura en el display.
   
   lcd.setCursor(0, 1);
-  lcd.print("SET:");
-  lcd.print(set);
+  lcd.print("SET:");  // Muestro "SET:" en la segunda fila del display.
+  lcd.print(set);  // Muestro set en el display.
 }
 
 // FIN FUNCIONES
