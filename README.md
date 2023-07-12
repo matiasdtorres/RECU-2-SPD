@@ -173,7 +173,6 @@ void loop()
 
 }
 ```
----
 
 ``` C++
 // FUNCIONES
