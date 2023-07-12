@@ -8,10 +8,10 @@
 
 ### Setteo de temperaturas funcional
 
-![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/RECU-2DO%20PARCIAL.png)
+![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/imagen_2023-05-18_121209060.png)
 ### 🦴Modelo esquematico del Setteo de temperaturas
 
-![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/imagen_2023-05-18_121209060.png)
+![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/RECU-2DO%20PARCIAL.png)
 
 ## 📄Consigna Setteo de temperaturas:
 Se nos pide restar de la temperatura actual con cualquier numero que eligamos. El
