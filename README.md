@@ -4,14 +4,14 @@
 
 ### **Sistema de Procesamiento de Datos (SPD)**
 
-![Arduino](https://github.com/magikboy/Parcial-1/blob/30c7b791849ce1d70de15ec52cb6a92ac3aec450/ArduinoTinkercad.jpg)
+![Arduino](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/ArduinoTinkercad.jpg)
 
 ### Setteo de temperaturas funcional
 
-![Setteo de temperaturas](https://github.com/magikboy/Parcial-1/blob/1a975207471b0b0f8a8c081eb3d869e3463c76a1/tinkercad1.png)
+![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/RECU-2DO%20PARCIAL.png)
 ### 🦴Modelo esquematico del Setteo de temperaturas
 
-![Setteo de temperaturas](https://github.com/magikboy/Parcial-1/blob/7917a8768ca4b1a21c14e51af70ec9adf790448b/imagen_2023-05-18_121209060.png)
+![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/imagen_2023-05-18_121209060.png)
 
 ## 📄Consigna Setteo de temperaturas:
 Se nos pide restar de la temperatura actual con cualquier numero que eligamos. El
@@ -102,7 +102,7 @@ void display(int temp, String set)
 }
 ```
 ### 🤖Funcionando
-![Setteo de temperaturas](https://github.com/magikboy/Parcial-1/blob/655e31a70d93ce6f4b70d06eaaaa3bd76ab51a28/2023-05-16-11-57-43.gif)
+![Setteo de temperaturas](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/2023-07-11-20-32-46.gif)
 
 ### 🧠Explicacion
 
@@ -203,7 +203,7 @@ La función **display()** se utiliza para mostrar las variables temp y set en el
 
 ### 📄Parcial:
 
-[Consignas](https://github.com/magikboy/Parcial-1/blob/02b8c8bd45b8f18107d74b41cb75eaca4d41e1a5/Primer%20Parcial%20SPD%20Parte%20Practica.pdf)
+[Enunciado](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/Enunciado.pdf)
 
 ### 📄Fuentes
 
