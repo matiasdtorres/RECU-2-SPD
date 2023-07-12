@@ -148,29 +148,27 @@ void loop()
 
   if (TECLA)
   {
-    if (isdigit(TECLA) && ingreso.length() < 2) {
-      ingreso += TECLA;  // Si presiona un digito y la longitud del valor ingresado es menor a 2, se agregan los digitos a la variable ingreso.
+    if (isdigit(TECLA) && ingreso.length() < 2) {  // Si presiona un digito y la longitud del valor ingresado es menor a 2
+      ingreso += TECLA;  // Se agregan los digitos a la variable ingreso.
     }
     else if (TECLA == 'A')
     {
       if (ingreso.length() > 0)
       {
         int setTemp = ingreso.toInt();  // Se convierte el valor ingresado a un entero.
-        Serial.println(medicion - setTemp);  // Muestro el resultado de la resta entre medicion y setTemp en el puerto serie.
+        Serial.println(medicion - setTemp);  // Muestro el resultado de la resta en el puerto serie.
       }
     }
     else if (TECLA == 'B')
     {
       ingreso = "";
       lcd.setCursor(0, 1);
-      lcd.clear();  // Borra el contenido del display LCD.
+      lcd.clear();  // Borra el contenido del display.
     }
   }
   
-  display(medicion, ingreso);  // Llamo a la funcion display para mostrar la temperatura y el valor ingresado en el display LCD.
+  display(medicion, ingreso);  //Llamo a la funcion display para mostrar la temperatura y el valor ingresado.
   delay(25);
-}
-
 }
 ```
 
