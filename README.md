@@ -200,7 +200,7 @@ La función **display()** se utiliza para mostrar las variables temp y set en el
 
 ### 📄Parcial:
 
-[Enunciado](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/Enunciado.pdf)
+- [Enunciado](https://github.com/matiasdtorres/RECU-2-SPD/blob/fadcf87b728d5b2968905f6cd988bb7e0d3b8ed4/Enunciado.pdf)
 
 ### 📄Fuentes
 
