@@ -148,7 +148,7 @@ void loop()
 
   if (TECLA)
   {
-    if (isdigit(TECLA) && ingreso.length() < 2) {  // Si presiona un digito y la longitud del valor ingresado es menor a 2
+    if (isdigit(TECLA) && ingreso.length() < 2) {  // Si presiona un digito y la longitud es menor a 2
       ingreso += TECLA;  // Se agregan los digitos a la variable ingreso.
     }
     else if (TECLA == 'A')
