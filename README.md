@@ -196,7 +196,7 @@ void display(int temp, String set)
 
 La función **display()** se utiliza para mostrar las variables temp y set en el display lcd.
 
-``` C++
+```
 ## <img src="tinkercad.png" alt="Tinkercad" height="32px"> Link al proyecto
 
 - [Proyecto](https://www.tinkercad.com/things/0G7hVhANbad)
